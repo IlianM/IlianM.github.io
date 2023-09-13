@@ -19,6 +19,22 @@ body {
   font-family: "Urbanist";
   color: rgb(0, 0, 0);
 }
+#parcours {
+  display: flex;
+  justify-content: center;
+}
+.card-container-parcours {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 4 cartes par ligne */
+  gap: 50px;
+  padding: 0 50px;
+}
+
+#intérêt{
+  display: flex;
+  justify-content: center;
+}
 
 #presentation_orpea p {
 
