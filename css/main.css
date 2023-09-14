@@ -1,7 +1,7 @@
 html {
 
   margin: 0;
-  background-color: #fff8ea;
+  background-color: #f9e3b7;
 }
 
 hr {
@@ -130,7 +130,7 @@ body {
 }
 
 #top_section {
-  background-color: #fff8ea;
+  background-color: #f9e3b7;
   margin-bottom: 25px;
 }
 
@@ -192,7 +192,7 @@ body {
   position: fixed;
   z-index: 1;
   top: 0;
-  background-color: #fff8ea;
+  background-color: #f9e3b7;
 
 }
 
