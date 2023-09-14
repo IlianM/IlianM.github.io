@@ -83,6 +83,23 @@ body {
 
 }
 
+#presentation_ilian {
+  display: flex;
+  margin-left: 0%;
+  justify-content: center;
+}
+
+#presentation_ilian img {
+  margin-top: 5%;
+  width: 100%;
+}
+
+#presentation_ilian img:hover {
+  margin-bottom: 30%;
+  transform: scale(2);
+  transition: transform .5s;
+}
+
 #hr-entreprise {
   max-width: 40%;
   font-size: 20px;
@@ -93,11 +110,7 @@ body {
   top: 0;
 }
 
-#presentation_ilian {
-  display: flex;
-  margin-left: 0%;
-  justify-content: space-around;
-}
+
 
 #organigramme {
   max-width: 300px;
@@ -148,6 +161,22 @@ body {
   transform: translateY(-30px);
   animation: apparition 1s 0s ease-out forwards;
 }
+
+#bilan {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.h1-margin {
+  margin-top: 10%;
+}
+
+.h2-margin {
+  margin-top: 5%;
+}
+
 
 #navbar {
   display: flex;
