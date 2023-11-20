@@ -63,3 +63,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+// Fonction pour ouvrir la fenêtre modale
+function openModal() {
+    document.getElementById('myModal').style.display = 'flex';
+}
+
+// Fonction pour fermer la fenêtre modale
+function closeModal() {
+    document.getElementById('myModal').style.display = 'none';
+}

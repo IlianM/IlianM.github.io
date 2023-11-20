@@ -36,16 +36,19 @@ body {
 }
 
 
-
 .card-container-veille {
   display: flex;
   grid-template-columns: repeat(3, 1fr);
-  /* 4 cartes par ligne */
   gap: 50px;
   padding: 0 50px;
   opacity: 0;
   transform: translateY(-30px);
   animation: apparition 1s 0s ease-out forwards;
+}
+
+.card-container-veille img {
+  width: 100%;
+  height: 100%;
 }
 
 #intérêt {
@@ -62,7 +65,7 @@ body {
 }
 
 #presentation_orpea {
-  margin-top: 10%;
+  margin-top: 20%;
   display: flex;
   margin-left: 0%;
   justify-content: space-around;
@@ -76,7 +79,6 @@ body {
 }
 
 #presentation_ilian p {
-
   max-width: 50%;
   font-size: 20px;
   opacity: 0;
@@ -90,14 +92,17 @@ body {
 #presentation_ilian {
   display: flex;
   margin-left: 0%;
-  justify-content: center;
-
+  margin-bottom: 10%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
 }
 
 #presentation_ilian img {
-  margin-top: 10%;
-  width: 100%;
-  height: 80%;
+  width: 30%;
+  height: 30%;
+  margin-bottom: 5%;
 
 }
 
@@ -292,9 +297,9 @@ body {
 .card-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* 4 cartes par ligne */
+
   gap: 20px;
-  padding: 0 50px;
+  padding: 150px 50px;
 
   opacity: 0;
   transform: translateY(-30px);
@@ -371,6 +376,47 @@ img {
   margin: 0 10px 0 10px;
 }
 
+
+#top-section {
+  margin-top: 500px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Style pour fermer la fenêtre modale */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .footer {
   background-color: #e66136;
   padding: 10px 0;
@@ -385,7 +431,7 @@ img {
   font-size: 18px;
   color: #ffffff;
   text-transform: capitalize;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   font-weight: 500;
   position: relative;
 }

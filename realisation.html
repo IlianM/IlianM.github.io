@@ -38,22 +38,38 @@
     </div>
     <div class="card-container">
         <div class="card">
-            <img src="image/image_projet.jpg" alt="Avatar">
+            <img src="image/image_projet.jpg" alt="Avatar"
+                onclick="openModal()">
             <div class="container">
-                <h4><b>Projet 1</b></h4>
-                <p>Conception de script Bash</p>
+                <h4><b>Script Bash<br><br> </b></h4>
+                <p>Ces scripts Bash ont été
+                    implémenté dans l'image Windows, ce qui permet d'apporter
+                    des modifications lors de la réinitialisation ou la mise en
+                    service d'un nouveau PC. Ce projet a duré un mois, j'ai été
+                    aidé uniquement par le responsable déploiement. Il n'y a pas
+                    eu de cahier des charges vraiment défini, mais je devais
+                    notamment lancer les mises à jour, l'installation, et la
+                    configuration de logiciel interne et externe.</p>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <p>Contenu de la fenêtre modale...</p>
             </div>
         </div>
         <div class="card">
-            <img src="image/projet2.png" alt="Avatar">
+            <img src="image/projet2.png" alt="Avatar" onclick="openModal()">>
             <div class="container">
-                <h4><b>Projet 2</b></h4>
-                <p>Conception de règle opérationnelle pour le déploiement
-                    d'outils</p>
+                <h4><b>Règles opérationnelles</b></h4>
+                <ul>
+                    <li>5 personnes</li>
+                    <li>2 ans</li>
+                </ul>
             </div>
         </div>
         <div class="card">
-            <img src="image/projet3.png" alt="Avatar">
+            <img src="image/projet3.png" alt="Avatar" onclick="openModal()">>
             <div class="container">
                 <h4><b>Projet 3</b></h4>
                 <p>Fichier excel des machines afin de les rajouter à notre outil
@@ -61,7 +77,7 @@
             </div>
         </div>
         <div class="card">
-            <img src="image/projet4.png" alt="Avatar">
+            <img src="image/projet4.png" alt="Avatar" onclick="openModal()">>
             <div class="container">
                 <h4><b>Projet 4</b></h4>
                 <p>Automatisation de la mise en fonctionnement des machines</p>
