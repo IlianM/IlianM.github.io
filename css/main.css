@@ -1,5 +1,5 @@
 html {
-
+  font-family: "Urbanist";
   margin: 0;
   background-color: #f9e3b7;
 }
@@ -16,7 +16,6 @@ hr {
 }
 
 body {
-  font-family: "Urbanist";
   color: rgb(0, 0, 0);
 
 }
@@ -186,12 +185,11 @@ body {
 
 #navbar {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   text-decoration: none;
   width: 100%;
   padding-top: 2em;
   padding-bottom: 2em;
-  font-family: "Urbanist";
   opacity: 0;
   transform: translateY(-30px);
   animation: apparition 1s 0s ease-out forwards;
@@ -230,8 +228,8 @@ body {
 .navbar_profil {
   font-size: 30px;
   padding-top: 0px;
-  margin-left: 20%;
-  margin-right: 10%;
+  margin-left: 15%;
+  margin-right: 7%;
 }
 
 #my_name {
