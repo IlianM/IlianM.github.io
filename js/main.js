@@ -33,7 +33,6 @@ function openModal(index) {
 
     if (index === 1) {
         modalContent.textContent = "Modale 1";
-
     } else if (index === 2) {
         modalContent.textContent = "Modale 2";
     } else if (index === 3) {
@@ -45,9 +44,9 @@ function openModal(index) {
     } else if (index === 6) {
         modalContent.textContent = "Modale 6";
     } else if (index === 7) {
-        modalContent.textContent = "Ces scripts Bash ont été implémentés dans l'image Windows, ce qui permet d'apporter des modifications lors de la réinitialisation ou la mise en service d'un nouveau PC. Ce projet a duré un mois, j'ai été aidé uniquement par le responsable déploiement. Il n'y a pas eu de cahier des charges vraiment défini, mais je devais notamment lancer les mises à jour, l'installation, et la configuration de logiciel interne et externe.";
+        modalContent.innerHTML = "Objectif : Concevoir des scripts Bash <br><br>  Temps : 1 mois <br><br> Équipe : 1,5 personne <br><br> Ces scripts Bash ont été implémentés dans l'image Windows, ce qui permet directement lors de l'installation de Windows, d'apporter des modifications lors de la réinitialisation ou la mise en service d'un nouveau PC. Ce projet a duré un mois, j'ai été aidé uniquement par le responsable déploiement. Il n'y a pas eu de cahier des charges vraiment défini. Les scripts que j'ai codé ont permis d'installer automatiquement des drivers, de lancer des mise à jour grâce à l'outil Dell Command Update, D'installer et de créer des raccourcis Office 2016, et d'activer la license.";
     } else if (index === 8) {
-        modalContent.textContent = "Modale 8";
+        modalContent.textContent = "Ce projet ";
     } else if (index === 9) {
         modalContent.textContent = "Modale 9";
     } else if (index === 10) {
