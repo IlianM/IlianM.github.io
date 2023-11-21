@@ -60,37 +60,43 @@
   </div>
   <div class="card-container-parcours">
     <div class="card" id="elementToHighlight1">
-      <img src="image/moulin_vent.jpg" alt="moulin_vent">
+      <img src="image/moulin_vent.jpg" alt="moulin_vent" onclick="openModal(1)">
       <div class="container">
         <h4><b>Collège Le moulin à vent</b></h4>
-        <p id="elementToHighlight4">J'ai effectué ma scolarité dans cet
+        <p>J'ai effectué ma scolarité dans cet
           établissement de ma 6ème à ma 3ème (2014-2018)</p>
-        <p id="elementToHighlight5" class="display2">C'est ici que j'ai été
+        <p>C'est ici que j'ai été
           initié aux bases de l'informatique et de la programmation, notamment
           avec Scratch, et mes premiers cours sur ordinateur.</p>
       </div>
     </div>
-    <div class="card" id="elementToHighlight2">
-      <img src="image/jules_verne.png" alt="jules_verne">
+    <div class="card">
+      <img src="image/jules_verne.png" alt="jules_verne" onclick="openModal(2)">
       <div class="container">
         <h4><b>Lycée Jules Verne</b></h4>
-        <p id="elementToHighlight5">C'est dans ce lycée que j'ai pu commencer à
+        <p>C'est dans ce lycée que j'ai pu commencer à
           programmer en cours
           d'informatique (2019-2022)</p>
-        <p id="elementToHighlight6" class="display3">J'ai commencé
+        <p>J'ai commencé
           l'algorithmie, grâce à ma spécialité NSI. J'ai fait mon premier site
           web non hébergé, et mon premier jeu en python.</p>
 
       </div>
     </div>
-    <div class="card" id="elementToHighlight3">
-      <img src="image/esiee.jpg" alt="esiee">
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <p>Contenu de la fenêtre modale...</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="image/esiee.jpg" alt="esiee" onclick="openModal(3)">
       <div class="container">
         <h4><b>Ecole supérieur ESIEE-IT</b></h4>
-        <p id="elementToHighlight7">J'ai entamé un BTS SIO SLAM afin de
+        <p>J'ai entamé un BTS SIO SLAM afin de
           m'orienter vers un parcours de
           developpeur</p>
-        <p id="elementToHighlightX" class="displayX">J'ai commencé
+        <p>J'ai commencé
           l'algorithmie, grâce à ma spécialité NSI. J'ai fait mon premier site
           web non hébergé, et mon premier jeu en python.</p>
       </div>
@@ -104,7 +110,7 @@
   </div>
   <div class="card-container-parcours">
     <div class="card">
-      <img src="image/musculation.png" alt="Musculation">
+      <img src="image/musculation.png" alt="Musculation" onclick="openModal(4)">
       <div class="container">
         <h4><b>Musculation</b></h4>
         <p>Depuis maintenant presque 2 ans, je fais régulièrement du sport et
@@ -112,7 +118,7 @@
       </div>
     </div>
     <div class="card">
-      <img src="image/dev.png" alt="Informatique">
+      <img src="image/dev.png" alt="Informatique" onclick="openModal(5)">
       <div class="container">
         <h4><b>Informatique</b></h4>
         <p>C'est évidemment lié à mes études, mais aussi depuis longtemps dans
@@ -120,7 +126,7 @@
       </div>
     </div>
     <div class="card">
-      <img src="image/porsche.png" alt="Voitures">
+      <img src="image/porsche.png" alt="Voitures" onclick="openModal(6)">
       <div class="container">
         <h4><b>Voitures</b></h4>
         <p>Je rêve d'un jour pouvoir conduire cette magnifique Porsche 911 Turbo

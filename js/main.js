@@ -26,57 +26,34 @@ function sortArticles(ev) {
     });
 }
 
-
-document.addEventListener("DOMContentLoaded", function () {
-    // Sélectionnez l'élément à partir du DOM
-    var elementToHighlight1 = document.getElementById("elementToHighlight1");
-    var elementToHighlight2 = document.getElementById("elementToHighlight2");
-    var elementToHighlight3 = document.getElementById("elementToHighlight3");
-    var elementToHighlight4 = document.getElementById("elementToHighlight4");
-    var elementToHighlight5 = document.getElementById("elementToHighlight5");
-    var elementToHighlight6 = document.getElementById("elementToHighlight6");
-    var elementToHighlight7 = document.getElementById("elementToHighlight7");
-    var elementToHighlight8 = document.getElementById("elementToHighlight8");
-
-    // Ajoutez un gestionnaire d'événements au clic
-    elementToHighlight1.addEventListener("click", function () {
-        // Ajoutez la classe "highlighted" à l'élément
-        elementToHighlight1.classList.toggle("highlighted");
-        elementToHighlight4.classList.toggle("display1");
-        elementToHighlight5.classList.toggle("display2");
-
-        console.log(elementToHighlight1.classList)
-    });
-
-    elementToHighlight2.addEventListener("click", function () {
-        elementToHighlight2.classList.toggle("highlighted");
-        elementToHighlight6.classList.toggle("display3");
-        elementToHighlight7.classList.toggle("display4");
-        console.log(elementToHighlight2.classList)
-    });
-
-    elementToHighlight3.addEventListener("click", function () {
-        elementToHighlight3.classList.toggle("highlighted");
-        console.log(elementToHighlight3.classList)
-    });
-
-});
-
 // Fonction pour ouvrir la fenêtre modale
 function openModal(index) {
     const modal = document.getElementById('myModal');
     const modalContent = modal.querySelector(".modal-content p");
 
     if (index === 1) {
-        modalContent.textContent = "Ces scripts Bash ont été implémentés dans l'image Windows, ce qui permet d'apporter des modifications lors de la réinitialisation ou la mise en service d'un nouveau PC. Ce projet a duré un mois, j'ai été aidé uniquement par le responsable déploiement. Il n'y a pas eu de cahier des charges vraiment défini, mais je devais notamment lancer les mises à jour, l'installation, et la configuration de logiciel interne et externe.";
+        modalContent.textContent = "Modale 1";
 
     } else if (index === 2) {
-        modalContent.textContent = "";
+        modalContent.textContent = "Modale 2";
     } else if (index === 3) {
-        modalContent.textContent = "";
+        modalContent.textContent = "Modale 3";
     } else if (index === 4) {
-        modalContent.textContent = "";
+        modalContent.textContent = "Modale 4";
+    } else if (index === 5) {
+        modalContent.textContent = "Modale 5";
+    } else if (index === 6) {
+        modalContent.textContent = "Modale 6";
+    } else if (index === 7) {
+        modalContent.textContent = "Ces scripts Bash ont été implémentés dans l'image Windows, ce qui permet d'apporter des modifications lors de la réinitialisation ou la mise en service d'un nouveau PC. Ce projet a duré un mois, j'ai été aidé uniquement par le responsable déploiement. Il n'y a pas eu de cahier des charges vraiment défini, mais je devais notamment lancer les mises à jour, l'installation, et la configuration de logiciel interne et externe.";
+    } else if (index === 8) {
+        modalContent.textContent = "Modale 8";
+    } else if (index === 9) {
+        modalContent.textContent = "Modale 9";
+    } else if (index === 10) {
+        modalContent.textContent = "Modale 10";
     }
+
 
     modal.style.display = 'flex';
 }
