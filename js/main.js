@@ -49,7 +49,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     elementToHighlight2.addEventListener("click", function () {
-        // Ajoutez la classe "highlighted" à l'élément
         elementToHighlight2.classList.toggle("highlighted");
         elementToHighlight6.classList.toggle("display3");
         elementToHighlight7.classList.toggle("display4");
@@ -57,7 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     elementToHighlight3.addEventListener("click", function () {
-        // Ajoutez la classe "highlighted" à l'élément
         elementToHighlight3.classList.toggle("highlighted");
         console.log(elementToHighlight3.classList)
     });
@@ -65,8 +63,22 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Fonction pour ouvrir la fenêtre modale
-function openModal() {
-    document.getElementById('myModal').style.display = 'flex';
+function openModal(index) {
+    const modal = document.getElementById('myModal');
+    const modalContent = modal.querySelector(".modal-content p");
+
+    if (index === 1) {
+        modalContent.textContent = "Ces scripts Bash ont été implémentés dans l'image Windows, ce qui permet d'apporter des modifications lors de la réinitialisation ou la mise en service d'un nouveau PC. Ce projet a duré un mois, j'ai été aidé uniquement par le responsable déploiement. Il n'y a pas eu de cahier des charges vraiment défini, mais je devais notamment lancer les mises à jour, l'installation, et la configuration de logiciel interne et externe.";
+
+    } else if (index === 2) {
+        modalContent.textContent = "";
+    } else if (index === 3) {
+        modalContent.textContent = "";
+    } else if (index === 4) {
+        modalContent.textContent = "";
+    }
+
+    modal.style.display = 'flex';
 }
 
 // Fonction pour fermer la fenêtre modale
