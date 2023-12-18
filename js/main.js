@@ -14,8 +14,8 @@ function sortArticles(ev) {
 
     if (sortType === "date") {
         newList = articlesArray.sort((a, b) => {
-            const dateA = a.querySelector(".date").dataset.date;
-            const dateB = b.querySelector(".date").dataset.date;
+            const dateA = new Date(a.querySelector(".date").dataset.date);
+            const dateB = new Date(b.querySelector(".date").dataset.date);
             return dateB - dateA;
         })
     }
@@ -31,9 +31,9 @@ function openModal(index) {
     const modalContent = modal.querySelector(".modal-content p");
 
     if (index === 1) {
-        modalContent.innerHTML = "Modale 1";
+        modalContent.innerHTML = "J'ai effectué ma scolarité dans cet établissement de ma 6ème à ma 3ème (2014-2018) C'est ici que j'ai été initié aux bases de l'informatique et de la programmation, notamment avec Scratch, et mes premiers cours sur ordinateur.";
     } else if (index === 2) {
-        modalContent.innerHTML = "Modale 2";
+        modalContent.innerHTML = "C'est dans ce lycée que j'ai pu commencer à programmer en cours d'informatique (2019-2022) J'ai commencé l'algorithmie, grâce à ma spécialité NSI. J'ai fait mon premier site web non hébergé, et mon premier jeu en python.";
     } else if (index === 3) {
         modalContent.innerHTML = "Modale 3";
     } else if (index === 4) {
