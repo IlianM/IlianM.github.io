@@ -4,6 +4,10 @@
     margin: 10px;
 }
 
+.img_downsize {
+    width: 20%;
+}
+
 h1 {
     margin: 30px 0px 30px 0px;
 }
