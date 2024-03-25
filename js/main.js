@@ -70,3 +70,8 @@ function openModal(index) {
 function closeModal() {
     document.getElementById('myModal').style.display = 'none';
 }
+
+
+document.getElementById('hamburger-menu').addEventListener('click', function () {
+    document.querySelector('.navbar').classList.toggle('display');
+});
