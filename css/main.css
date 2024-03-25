@@ -536,6 +536,8 @@ img {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     padding: 0 30px;
+    max-width: 80%;
+
   }
 
   #select {
@@ -633,7 +635,7 @@ img {
 
   #profile_picture_presentation {
     width: 40%;
-    margin-left: 0;
+    margin-left: 5vh;
     margin-top: 2%;
   }
 
@@ -718,7 +720,7 @@ img {
   }
 
   .navbar_profil {
-    font-size: 30px;
+    font-size: 40px;
     padding-top: 0px;
     margin-left: 0;
     margin-right: 0;
