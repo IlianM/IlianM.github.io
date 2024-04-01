@@ -328,18 +328,6 @@ body {
   top: 0;
 }
 
-.card-container2 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-
-  gap: 20px;
-  padding: 100px 50px;
-
-  opacity: 0;
-  transform: translateY(-30px);
-  animation: apparition 0.5s 0s ease-out forwards;
-  top: 0;
-}
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -654,6 +642,9 @@ img {
   .card-container2 {
     grid-template-columns: repeat(1, 1fr);
     padding: 0 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 
   #select {
@@ -718,8 +709,8 @@ img {
     z-index: 9999;
     cursor: pointer;
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background: url('../image/3barres.png') no-repeat;
     background-size: cover;
     color: #fff;
