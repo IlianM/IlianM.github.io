@@ -35,13 +35,13 @@ function openModal(index) {
     } else if (index === 2) {
         modalContent.innerHTML = "C'est dans ce lycée que j'ai pu commencer à programmer en cours d'informatique (2019-2022) J'ai commencé l'algorithmie, grâce à ma spécialité NSI. J'ai fait mon premier site web non hébergé, et mon premier jeu en python.";
     } else if (index === 3) {
-        modalContent.innerHTML = "Modale 3";
+        modalContent.innerHTML = "J'ai entamé un BTS SIO SLAM afin de m'orienter vers un parcours de developpeur J'ai commencé l'algorithmie, grâce à ma spécialité NSI. J'ai fait mon premier site web non hébergé, et mon premier jeu en python.";
     } else if (index === 4) {
-        modalContent.innerHTML = "Modale 4";
+        modalContent.innerHTML = "Depuis maintenant presque 2 ans, je fais régulièrement du sport et notamment de la musculation. C'est un moyen de relacher la pression, de penser à autre chose, d'être dans ma bulle";
     } else if (index === 5) {
-        modalContent.innerHTML = "Modale 5";
+        modalContent.innerHTML = "C'est évidemment lié à mes études, mais aussi depuis longtemps dans ma famille. Je suis passionné d'informatique depuis petit, et c'est surtout mon beau-père qui m'a transmis cette passion.";
     } else if (index === 6) {
-        modalContent.innerHTML = "Modale 6";
+        modalContent.innerHTML = "Je rêve d'un jour pouvoir conduire cette magnifique Porsche 911 Turbo S. Mais actuellement, soyons réaliste, j'ai pour projet 2024 d'acquérir une C250TD avec son fameux moteur l'OM605, pour rouler en toute tranquilité en dessous des limitations de vitesse.";
     } else if (index === 7) {
         modalContent.innerHTML = "<p class='margin-modal title-modal'>Objectif : Concevoir des scripts Bash</p><p class='margin-modal'>Temps : 1 mois </p> <p class='margin-modal'>Équipe : 1,5 personne</p> <p class='margin-modal'>Ces scripts Bash ont été implémentés dans l'image Windows, ce qui permet directement lors de l'installation de Windows, d'apporter des modifications lors de la réinitialisation ou la mise en service d'un nouveau PC.</p><p class='margin-modal'> Ce projet a duré un mois, j'ai été aidé uniquement par un collègue du déploiement. Il n'y a pas eu de cahier des charges vraiment défini. Les scripts que j'ai codé ont permis d'installer automatiquement des drivers, de lancer des mise à jour grâce à l'outil Dell Command Update, d'installer et de créer des raccourcis Office 2016, et d'activer la license.</p>";
     } else if (index === 8) {
