@@ -34,96 +34,152 @@
             <a class="navbar_a navbar_items_right" href="veille.html">Veille</a>
             <a class="navbar_a navbar_items_right" href="bilan.html">Bilan</a>
         </div>
+    </div>
+    <div>
+        <div id="veille-titre">
+            <h1>Voiture autonome</h1>
+        </div>
 
-        <div>
-            <div id="veille-titre">
-                <h1>Voiture autonome</h1>
-            </div>
+        <div id="veille">
 
-            <div id="veille">
-
-                <p>Ma veille porte sur le sujet des voitures avec conduite
-                    autonome.
-                    Etant passionné de voiture et d'informatique, je me suis
-                    naturellement orienté sur ce sujet.
-                    <br><br>
-                    Lorsque l'on évoque les voitures autonome, on pense
-                    directement
-                    avec Tesla, qui a été le constructeur précurseur sur le
-                    sujet.
-                    Mais la tendance a changé, en effet, de nombreux
-                    constructeur
-                    comme BMW ou Toyota rentrent dans la course.
-                </p>
-            </div>
+            <p>Ma veille porte sur les voitures avec conduite
+                autonome.
+                Etant passionné de voiture et d'informatique, je me suis
+                naturellement orienté vers ce sujet.
+                <br><br>
+                Lorsque l'on évoque les voitures autonome, on pense
+                directement
+                à Tesla, qui a été le constructeur précurseur de l'industrie
+                Mais la tendance a changé, en effet, de nombreux
+                constructeur rentrent dans la course.
+            </p>
+        </div>
+        <div id="select-container">
             <select id="select" name="order" onchange="sortArticles(event)">
                 <option value="note">Meilleurs notes</option>
                 <option value="date">Date</option>
 
             </select>
-            <div class="card-container-veille">
-                <div class="card">
-                    <a
-                        href="https://www.capital.fr/entreprises-marches/tesla-elon-musk-veut-lancer-une-voiture-autonome-a-100-avant-2024-1473473">
-                        <img src="image/teslalogo.png" alt="tesla">
-                    </a>
-                    <div class="container">
-                        <h4><b>Tesla</b></h4>
-                        <p>Tesla : Elon Musk veut lancer une voiture autonome à
-                            100% avant 2024</p>
-                    </div>
-                    <span class="date" data-date="07/23/2022">06/07/2022</span>
-                    <span class="note" data-note="3">3/5</span>
-                </div>
-                <div class="card">
-                    <a
-                        href="https://www.caradisiac.com/conduire-une-voiture-autonome-de-niveau-2-rend-deux-fois-moins-vigilant-205247.htm">
-                        <img src="image/vigilance.png" alt="Vigilance">
-                    </a>
-                    <div class="container">
-                        <h4><b>Tesla</b></h4>
-                        <p>Conduire une voiture autonome de niveau 2 rend deux
-                            fois moins vigilant</p>
-                        <span class="date"
-                            data-date="10/27/2023">27/10/2023</span>
-                        <span class="note" data-note="4">4/5</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <a
-                        href="https://www.automobile-propre.com/breves/le-constructeur-chinois-nio-promet-la-disparition-des-accidents-de-la-route-en-2030/">
-                        <img src="image/nio.png" alt="nio">
-                    </a>
-                    <div class="container">
-                        <h4><b>Nio</b></h4>
-                        <p>Le constructeur chinois Nio promet la disparition des
-                            accidents de la route en 2030</p>
-                    </div>
-                    <span class="date" data-date="11/16/2023">16/11/2023</span>
-                    <span class="note" data-note="5">5/5</span>
-                </div>
-
-            </div>
         </div>
 
-
-
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col">
-                        <h4>Me suivre</h4>
-                        <div class="social-links">
-                            <a
-                                href="https://www.linkedin.com/in/ilian-maciuba-552100230"><i
-                                    class="fab fa-linkedin-in"></i></a>
-                            <a href="https://github.com/IlianM"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
+        <div class="card-container-veille">
+            <div class="card">
+                <a
+                    href="https://www.capital.fr/entreprises-marches/tesla-elon-musk-veut-lancer-une-voiture-autonome-a-100-avant-2024-1473473">
+                    <img src="image/teslalogo.png" alt="tesla">
+                </a>
+                <div class="container">
+                    <h4><b>Tesla</b></h4>
+                    <p>Tesla : Elon Musk veut lancer une voiture autonome à
+                        100% avant 2024</p>
+                </div>
+                <span class="date" data-date="07/23/2022">06/07/2022</span>
+                <span class="note" data-note="3">★★★</span>
+            </div>
+            <div class="card">
+                <a
+                    href="https://www.caradisiac.com/conduire-une-voiture-autonome-de-niveau-2-rend-deux-fois-moins-vigilant-205247.htm">
+                    <img src="image/vigilance.png" alt="Vigilance">
+                </a>
+                <div class="container">
+                    <h4><b>Tesla</b></h4>
+                    <p>Conduire une voiture autonome de niveau 2 rend deux
+                        fois moins vigilant</p>
+                    <span class="date" data-date="10/27/2023">27/10/2023</span>
+                    <span class="note" data-note="4">★★★★</span>
                 </div>
             </div>
-        </footer>
+            <div class="card">
+                <a
+                    href="https://www.automobile-propre.com/breves/le-constructeur-chinois-nio-promet-la-disparition-des-accidents-de-la-route-en-2030/">
+                    <img src="image/nio.png" alt="nio">
+                </a>
+                <div class="container">
+                    <h4><b>Nio</b></h4>
+                    <p>Le constructeur chinois Nio promet la disparition des
+                        accidents de la route en 2030</p>
+                </div>
+                <span class="date" data-date="11/16/2023">16/11/2023</span>
+                <span class="note" data-note="5">★★★★★</span>
+            </div>
+            <div class="card">
+                <a
+                    href="https://www.lemonde.fr/economie/article/2023/09/10/tesla-mise-sur-le-superordinateur-dojo-pour-negocier-le-virage-de-la-voiture-autonome_6188663_3234.html">
+                    <img src="image/lemonde.png" alt="">
+                </a>
+                <div class="container">
+                    <h4><b>Tesla</b></h4>
+                    <p>Tesla mise sur le superordinateur Dojo pour négocier le
+                        virage de la voiture autonome</p>
+                </div>
+                <span class="date" data-date="09/10/2023">10/09/2023</span>
+                <span class="note" data-note="4">★★★★</span>
+            </div>
+            <div class="card">
+                <a
+                    href="https://www.automobile-propre.com/breves/le-constructeur-chinois-nio-promet-la-disparition-des-accidents-de-la-route-en-2030/">
+                    <img src="image/" alt="">
+                </a>
+                <div class="container">
+                    <h4><b>Nio</b></h4>
+                    <p>Le constructeur chinois Nio promet la disparition des
+                        accidents de la route en 2030</p>
+                </div>
+                <span class="date" data-date="11/16/2023">16/11/2023</span>
+                <span class="note" data-note="5">★★★★★</span>
+            </div>
+            <div class="card">
+                <a
+                    href="https://www.automobile-propre.com/breves/le-constructeur-chinois-nio-promet-la-disparition-des-accidents-de-la-route-en-2030/">
+                    <img src="image/" alt="">
+                </a>
+                <div class="container">
+                    <h4><b>Nio</b></h4>
+                    <p>Le constructeur chinois Nio promet la disparition des
+                        accidents de la route en 2030</p>
+                </div>
+                <span class="date" data-date="11/16/2023">16/11/2023</span>
+                <span class="note" data-note="5">★★★★★</span>
+            </div>
+            <div class="card">
+                <a
+                    href="https://www.automobile-propre.com/breves/le-constructeur-chinois-nio-promet-la-disparition-des-accidents-de-la-route-en-2030/">
+                    <img src="image/" alt="">
+                </a>
+                <div class="container">
+                    <h4><b>Nio</b></h4>
+                    <p>Le constructeur chinois Nio promet la disparition des
+                        accidents de la route en 2030</p>
+                </div>
+                <span class="date" data-date="11/16/2023">16/11/2023</span>
+                <span class="note" data-note="5">★★★★★</span>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Me suivre</h4>
+                    <div class="social-links">
+                        <a
+                            href="https://www.linkedin.com/in/ilian-maciuba-552100230"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/IlianM"><i
+                                class="fab fa-github"></i></a>
+
+                    </div>
+                    <a class=""
+                        href="realisations/mentions_legales.html">Mentions
+                        Légales</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

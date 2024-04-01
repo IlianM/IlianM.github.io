@@ -52,6 +52,10 @@ body {
 }
 
 #select {
+  display: flex;
+  width: auto;
+  justify-content: center;
+
   opacity: 0;
   transform: translateY(-30px);
   animation: apparition 0.5s 0s ease-out forwards;
@@ -59,10 +63,16 @@ body {
   font-size: 16px;
   border: 1px solid #e66136;
   border-radius: 8px;
-  margin-left: 40%;
   margin-top: 5%;
   background-color: #e66136;
   color: white;
+}
+
+#select-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  width: 100%;
 }
 
 #intérêt {
@@ -187,6 +197,20 @@ body {
   flex-direction: column;
   text-align: center;
   margin-top: 10%;
+}
+
+span.date,
+span.note {
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+
+
+}
+
+span.note {
+  color: #e66136;
+
 }
 
 .h1-margin {
@@ -652,6 +676,14 @@ img {
     margin-top: 2%;
   }
 
+  #select-container {
+    margin-bottom: 3vh;
+  }
+
+  .card-container-veille {
+    gap: 0px;
+  }
+
   #presentation_ilian img {
     width: 70%;
     height: 70%;
@@ -704,8 +736,8 @@ img {
 
   #hamburger-menu-label {
     position: fixed;
-    top: 20px;
-    left: 20px;
+    top: 10px;
+    left: 10px;
     z-index: 9999;
     cursor: pointer;
     display: inline-block;
@@ -755,6 +787,7 @@ img {
     margin-right: 0;
     margin-top: 5vh;
   }
+
 
   .navbar a {
     color: #fff;
