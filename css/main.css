@@ -25,6 +25,10 @@ body {
   justify-content: center;
 }
 
+#mooc {
+  width: 50%;
+}
+
 .card-container-parcours {
   display: grid;
   cursor: pointer;
@@ -61,9 +65,9 @@ body {
   transform: translateY(-30px);
   animation: apparition 0.5s 0s ease-out forwards;
   padding: 8px;
-  font-size: 16px;
+  font-size: 20px;
   border: 1px solid #e66136;
-  border-radius: 8px;
+  border-radius: 20px;
   margin-top: 5%;
   background-color: #e66136;
   color: white;
