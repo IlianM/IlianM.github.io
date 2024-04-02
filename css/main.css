@@ -37,13 +37,14 @@ body {
 
 
 .card-container-veille {
-  display: flex;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
   padding: 0 50px;
   opacity: 0;
   transform: translateY(-30px);
   animation: apparition 0.5s 0s ease-out forwards;
+  justify-items: center;
 }
 
 .card-container-veille img {
@@ -89,7 +90,7 @@ body {
 }
 
 #presentation_orpea {
-  margin-top: 20%;
+  margin-top: 5%;
   display: flex;
   margin-left: 0%;
   justify-content: space-around;
@@ -100,6 +101,28 @@ body {
   z-index: 1;
   top: 0;
 
+}
+
+#presentation_orpea h2,
+#presentation_ilian h2 {
+  font-size: 40px;
+  margin: 20px;
+}
+
+#presentation_orpea p,
+#presentation_ilian p {
+  max-width: 50%;
+  font-size: 20px;
+  margin: 10px
+}
+
+#presentation_orpea li {}
+
+
+#pdg_orpea {
+  margin: 20px;
+  display: flex;
+  width: 100%;
 }
 
 #presentation_ilian p {
@@ -152,11 +175,11 @@ body {
   width: 20%;
 }
 
-#pdg_orpea {
-  display: flex;
-  width: 20%;
-  height: 20%;
 
+#presentation_orpea {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 #top_section {
@@ -295,6 +318,7 @@ span.note {
   opacity: 0;
   transform: translateX(200px);
   animation: apparition 0.5s 1s ease-out forwards;
+  margin-top: 10%;
 
 }
 
@@ -429,7 +453,7 @@ img {
 .modal {
   display: none;
   position: fixed;
-  top: 100px;
+  top: 0px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -597,10 +621,20 @@ img {
     margin-top: 5em;
   }
 
+  #presentation_orpea {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #orpea {
+    width: 30vh;
+  }
+
   #profile_picture_presentation {
     width: 50%;
     margin-left: 0;
-    margin-top: 2%;
+    margin-top: 10%;
   }
 
   #presentation_p {
@@ -700,6 +734,7 @@ img {
     align-items: center;
   }
 
+
   .card {
     margin-top: 5%;
     margin-bottom: 10%;
@@ -763,6 +798,7 @@ img {
     overflow-y: auto;
     padding: 20px;
   }
+
 
   .navbar ul {
     list-style: none;
