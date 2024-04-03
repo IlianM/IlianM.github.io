@@ -108,7 +108,8 @@ body {
 }
 
 #presentation_orpea h2,
-#presentation_ilian h2 {
+#presentation_ilian h2,
+#bilan h2 {
   font-size: 40px;
   margin: 20px;
 }
@@ -120,7 +121,10 @@ body {
   margin: 10px
 }
 
-#presentation_orpea li {}
+#presentation_orpea li,
+#bilan li {
+  margin: 10px;
+}
 
 
 #pdg_orpea {
